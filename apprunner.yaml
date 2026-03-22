@@ -1,5 +1,14 @@
 version: 1.0
-runtime: r_v2
-tests:
+runtime: corretto21
+build:
   commands:
-    - echo "No tests for now"
+    - ./mvnw clean package -DskipTests
+run:
+  command: java -jar target/*.jar
+  network:
+    port: 8080
+  env:
+    - name: DB_PASSWORD
+      value: "AVNS_oowq8wBHRrdmMNpRKUl"
+    - name: SPRING_PROFILES_ACTIVE
+      value: "prod"
