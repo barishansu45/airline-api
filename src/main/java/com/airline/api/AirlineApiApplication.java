@@ -1,11 +1,17 @@
 package com.airline.api;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+@OpenAPIDefinition(servers = {
+        @Server(url = "http://localhost:9000", description = "Gateway Server"),
+        @Server(url = "https://2ckp9swrez.us-east-1.awsapprunner.com", description = "Direct AWS Server")
+})
 @SpringBootApplication
 public class AirlineApiApplication {
 
@@ -18,9 +24,8 @@ public class AirlineApiApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                // Tüm endpoint'ler (/**) için CORS izni veriyoruz
                 registry.addMapping("/**")
-                        .allowedOrigins("*") // Swagger'ın AWS üzerinden istek atabilmesi için şart
+                        .allowedOrigins("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
