@@ -2,13 +2,12 @@ version: 1.0
 runtime: corretto17
 build:
   commands:
-    - ./mvnw clean package -DskipTests
+    build:
+      - ./mvnw clean package -DskipTests
 run:
   command: java -jar target/*.jar
   network:
     port: 8080
   env:
-    - name: DB_PASSWORD
-      value: "AVNS_oowq8wBHRrdmMNpRKUl"
-    - name: SPRING_PROFILES_ACTIVE
-      value: "prod"
+    DB_PASSWORD: "AVNS_oowq8wBHRrdmMNpRKUl"
+    SPRING_PROFILES_ACTIVE: "prod"
