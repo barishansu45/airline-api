@@ -3,9 +3,10 @@ runtime: corretto17
 build:
   commands:
     build:
-      - mvn clean package -DskipTests
+      - chmod +x mvnw
+      - ./mvnw clean package -DskipTests
 run:
-  command: java -jar target/*.jar
+  command: ./mvnw spring-boot:run
   network:
     port: 8080
   env:
