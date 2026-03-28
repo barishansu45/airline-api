@@ -9,5 +9,7 @@ run:
   network:
     port: 8080
   env:
-    DB_PASSWORD: "AVNS_oowq8wBHRrdmMNpRKUl"
-    SPRING_PROFILES_ACTIVE: "prod"
+    - name: DB_PASSWORD
+      value: "AVNS_oowq8wBHRrdmMNpRKUl"
+    - name: SPRING_PROFILES_ACTIVE
+      value: "prod"
