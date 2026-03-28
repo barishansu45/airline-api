@@ -45,7 +45,7 @@ public class FlightController {
     public ResponseEntity<Page<Flight>> queryFlights(
             @RequestParam String from,
             @RequestParam String to,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime dateFrom,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) java.time.LocalDateTime dateFrom,
             @RequestParam(defaultValue = "0") int page) {
 
         LocalDateTime end = dateFrom.plusDays(1);

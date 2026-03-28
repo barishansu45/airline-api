@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @OpenAPIDefinition(servers = {
-        @Server(url = "http://localhost:9000", description = "Gateway Server"),
+        @Server(url = "http://localhost:9000", description = "Gateway Server"), // ŞART
         @Server(url = "https://2ckp9swrez.us-east-1.awsapprunner.com", description = "Direct AWS Server")
 })
 @SpringBootApplication
