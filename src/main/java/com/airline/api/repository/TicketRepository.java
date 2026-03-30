@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
-    // PDF gereksinimi: Check-in için bileti numarasından bulmamız gerekebilir
+   
     Ticket findByTicketNumber(String ticketNumber);
     List<Ticket> findByFlightId(Long flightId);
 }
