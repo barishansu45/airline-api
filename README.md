@@ -128,7 +128,7 @@ The API maintained stable performance even under the 100 VU Stress Load, with re
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/barishansu45/airline-api](https://github.com/barishansu45/airline-api)
+git clone https://github.com/barishansu45/airline-api
 ```
 2. **Run the Backend:**
 ```bash
