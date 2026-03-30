@@ -8,7 +8,7 @@
 
 > **High-performance Airline Ticketing API** built with Spring Boot & Spring Cloud Gateway using **Service-Oriented Architecture (SOA)**.
 
-🚀 **[Live Swagger UI](https://airline-api-project-e0h2dwbpgyh3h3d8.germanywestcentral-01.azurewebsites.net/swagger-ui/index.html)** | 🛡️ **[API Gateway Repository](https://github.com/barishansu45/api-gateway)** | 🎥 **[Demo Video](#)**
+🚀 **[Live Swagger UI](https://airline-api-project-e0h2dwbpgyh3h3d8.germanywestcentral-01.azurewebsites.net/swagger-ui/index.html)** | 🛡️ **[API Gateway Repository](https://github.com/barishansu45/api-gateway)** | 🎥 [**[Demo Video](#)**](https://www.youtube.com/watch?v=sHMSK8gfKck)
 
 ---
 
