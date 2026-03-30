@@ -1,19 +1,19 @@
-# ✈️ Airline Ticketing API - Group 1 (SE 4458 Midterm)
+# ✈️ Airline Management System (Group 1 - SE 4458 Midterm)
 
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
-![Status](https://img.shields.io/badge/status-active-success)
+![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Cloud](https://img.shields.io/badge/Spring_Cloud-Gateway-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Azure-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![k6](https://img.shields.io/badge/Load_Testing-k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
 
-This project is a high-performance, **Service-Oriented Architecture (SOA)** based Airline Management System. It features a Spring Boot backend protected and managed by a Spring Cloud Gateway.
+> **High-performance Airline Ticketing API** built with Spring Boot & Spring Cloud Gateway using **Service-Oriented Architecture (SOA)**.
 
-> **Note:** This project strictly follows SOA principles. The core business logic is located in this repository, while security and rate-limiting are handled by a separate **API Gateway** repository.
+🚀 **[Live Swagger UI](https://airline-api-project-e0h2dwbpgyh3h3d8.germanywestcentral-01.azurewebsites.net/swagger-ui/index.html)** | 🛡️ **[API Gateway Repository](https://github.com/barishansu45/api-gateway)** | 🎥 **[Demo Video](#)**
 
 ---
 
-## 🔗 Deliverables (Quick Links)
-* **🎥 Demo Video:** [Link will be updated shortly after recording]
-* **🌍 Deployed Swagger UI:** [Click here to test the API](https://airline-api-project-e0h2dwbpgyh3h3d8.germanywestcentral-01.azurewebsites.net/swagger-ui/index.html)
-* **🛡️ API Gateway Source Code:** [https://github.com/barishansu45/api-gateway](https://github.com/barishansu45/api-gateway)
+### 📢 Important Note
+This project strictly follows **SOA principles**. The core business logic is located in this repository, while security, authentication, and rate-limiting are managed by a **separate** API Gateway service.
 
 ---
 
