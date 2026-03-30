@@ -13,9 +13,9 @@ public class Ticket {
     @ManyToOne
     private Flight flight;
 
-    private String ticketNumber; // Bilet numarası
-    private String flightNumber; // Uçuş numarası
-    private String passengerName; // Yolcu ismi
-    private String seatNumber;    // Koltuk numarası (Check-in için)
-    private boolean isCheckedIn;  // Check-in durumu
+    private String ticketNumber; 
+    private String flightNumber; 
+    private String passengerName; 
+    private String seatNumber;    
+    private boolean isCheckedIn;  
 }
