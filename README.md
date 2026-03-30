@@ -48,8 +48,17 @@ erDiagram
   
 <img width="245" height="561" alt="ERDiagram" src="https://github.com/user-attachments/assets/1259bb99-d7b9-423b-ab7e-798994f0d62d" />
 
-*Testing Results (k6)
 
+*Testing Results (k6)
+### 🎯 Tested Endpoints
+To comprehensively evaluate the system's performance, all core API endpoints were subjected to the load test. The primary focus was on:
+* **`GET /api/v1/flights/query`** : Simulating high-traffic read operations (users searching for flights).
+* **`POST /api/v1/flights/buy-ticket`** : Simulating concurrent write operations to test database transactional integrity and capacity limits.
+* **`GET /api/v1/flights/{id}`** : Fetching specific flight details.
+* **`POST /api/v1/flights/upload`** : Testing the performance of bulk CSV data processing.
+
+* **k6 Test Script File:** [`load-test.js`](./load-test.js)
+  
 [k6testing.csv](https://github.com/user-attachments/files/26348014/k6testing.csv)Scenario,Virtual Users (VU),Duration
 Normal Load,20,30s
 Peak Load,50,30s
