@@ -6,7 +6,7 @@ import com.airline.api.service.FlightService;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.format.annotation.DateTimeFormat; // Bu import ŞART
+import org.springframework.format.annotation.DateTimeFormat; 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -34,9 +34,9 @@ public class FlightController {
     public ResponseEntity<String> addFlightByFile(@RequestParam("file") MultipartFile file) {
         try {
             flightService.processCsvFile(file);
-            return ResponseEntity.ok("Dosya başarıyla işlendi ve uçuşlar eklendi.");
+            return ResponseEntity.ok("The file has been successfully processed and flights have been added.");
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Dosya işleme hatası: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("File processing error: " + e.getMessage());
         }
     }
 
