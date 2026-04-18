@@ -18,7 +18,7 @@ public class AirlineApiApplication {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .addServersItem(new Server().url("http://localhost:9000").description("Gateway Server"))
+                .addServersItem(new Server().url("https://airline-api-project-e0h2dwbpgyh3h3d8.germanywestcentral-01.azurewebsites.net").description("Gateway Server"))
                 .addServersItem(new Server().url("https://2ckp9swrez.us-east-1.awsapprunner.com").description("Direct AWS Server"));
     }
 
