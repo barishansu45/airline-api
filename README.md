@@ -84,8 +84,10 @@ npm run dev
 ```
 
 ## 🔗 Project Links
-- **Presentation Video:** [Insert Video Link Here]
-- **Source Code:** [Insert GitHub Repo Link Here]
+- **Presentation Video:** [Watch Project Demo on YouTube](https://youtu.be/aVwDCfvFbsI)
+- **Source Code:** 
+  - [Airline Backend API](https://github.com/barishansu45/airline-api)
+  - [API Gateway](https://github.com/barishansu45/api-gateway)
 
 ---
 *Developed for SE4458 - Software Architecture Assignment.*
